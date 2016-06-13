@@ -15,3 +15,8 @@ I also used a tool called [Realm.io](http://www.realm.io) for storing the rating
 * [SwiftHTTP](https://github.com/daltoniam/SwiftHTTP) - Helps with making API requests 
 * [Kingfisher](https://github.com/onevcat/Kingfisher) - Image downloading and caching 
 
+
+
+
+
+![](https://github.com/Werbelow/ipasapis/blob/master/app-demo.gif)
