@@ -75,7 +75,9 @@ class BeerVC: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("BeerCell", forIndexPath: indexPath) as! BeerCell
-        cell.beerImage.kf_setImageWithURL(NSURL(string: beerArray[indexPath.row].image.original)!)
+//        cell.beerImage.kf_setImageWithURL(NSURL(string: beerArray[indexPath.row].image.original)!)
+        cell.beerImage.kf_setImageWithURL(NSURL(string: beerArray[indexPath.row].image.original)!, placeholderImage: nil, optionsInfo:
+            [.Transition(ImageTransition.Fade(0.5))], progressBlock: nil, completionHandler: nil)
         cell.beerNameLabel.text = beerArray[indexPath.row].name
         cell.abvLabel.text = beerArray[indexPath.row].ABV
         cell.priceLabel.text = beerArray[indexPath.row].price

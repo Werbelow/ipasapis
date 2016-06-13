@@ -61,5 +61,7 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Get Your Location To Fetch Locations With Beer</string>
 </dict>
 </plist>

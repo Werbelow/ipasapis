@@ -56,10 +56,42 @@ public class BeerAPI {
                 do {
                     let decoder = JSONDecoder(response.data)
                     let beer = try BeerDetail(decoder["beer"])
-                    
                     callback(beer)
-                } catch {
-                    print("Unable to parse JSON")
+                } catch let error {
+                    print("Unable to parse JSON \(error)")
+                }
+                
+            }
+        } catch let error {
+            print("got an error creating the request: \(error)")
+        }
+        
+    }
+    
+    class func getBeerLocations(id: String, zipcode:String, callback: (Array<Location>) -> Void){
+        do {
+            let opt = try HTTP.GET("http://apis.mondorobot.com/beer-finder?zip_code=\(zipcode)&beer=\(id)", parameters: nil, headers: nil, requestSerializer: JSONParameterSerializer())
+            opt.start { response in
+                if let err = response.error {
+                    print("error: \(err.localizedDescription)")
+                }
+                
+                print("opt finished: \(response.description)")
+                do {
+                    let decoder = JSONDecoder(response.data)
+//                    print("decoder \(decoder["beers"].array)")
+                    var locationsArray = Array<Location>()
+                    if let locArr = decoder["results"].array {
+                        for loc in locArr {
+                            
+                            let newLoc = try Location(loc)
+                            print("Beer \(newLoc)")
+                            locationsArray.append(newLoc)
+                        }
+                    }
+                    callback(locationsArray)
+                } catch let error {
+                    print("Unable to parse JSON \(error)")
                 }
                 
             }

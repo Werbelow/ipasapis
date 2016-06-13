@@ -19,6 +19,7 @@ struct BeerDetail: JSONJoy {
     let price: String
     let image: Image
     let style: String
+    let id:String
     
     
     
@@ -27,7 +28,7 @@ struct BeerDetail: JSONJoy {
         guard let descriptorsArray = decoder["descriptors"].array else {throw JSONError.WrongType}
         var tempArray = Array<String>()
         for descriptor in descriptorsArray {
-            tempArray.append(try JSONDecoder(descriptor).getString())
+            tempArray.append(descriptor.string!)
         }
         descriptors = tempArray
         print("DESCRIPTORS \(descriptors)")
@@ -50,6 +51,7 @@ struct BeerDetail: JSONJoy {
         price = try decoder["price_per_glass"].getString()
         image = try Image(decoder["bottle_image"])
         style = try decoder["style"].getString()
+        id = try decoder["id"].getString()
         
         
     }

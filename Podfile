@@ -9,7 +9,10 @@ pod 'JSONJoy-Swift', '~> 2.0.0'
 pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
 pod 'HanekeSwift'
 pod 'Firebase'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
 pod 'Kingfisher', '~> 2.4'
+pod 'RealmSwift'
 end
 
 target 'IPATests' do
