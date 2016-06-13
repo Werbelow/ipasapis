@@ -7,7 +7,7 @@ My hackathon app was all about helping a fellow beer drinker learn more about th
 I was one of only two? solo teams, but had a blast challenging myself to see what I could make in 24 hours. 
 
 App is built with Swift (native iOS app).
-I also used a tool called [Realm.io](www.realm.io) for storing the ratings and favorites. 
+I also used a tool called [Realm.io](http://www.realm.io) for storing the ratings and favorites. 
 
 ### I used the following CocoaPods:
 
