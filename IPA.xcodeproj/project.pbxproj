@@ -32,7 +32,6 @@
 		1F2654461D0BB3CB002A7052 /* BeerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2654451D0BB3CB002A7052 /* BeerAPI.swift */; };
 		1F2654481D0BB6DF002A7052 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2654471D0BB6DF002A7052 /* Utils.swift */; };
 		1F26544A1D0BB98A002A7052 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2654491D0BB98A002A7052 /* Image.swift */; };
-		1F2EDEFE1D0BD3F7007189B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F2EDEFD1D0BD3F7007189B4 /* GoogleService-Info.plist */; };
 		1F2EDF001D0BD530007189B4 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2EDEFF1D0BD530007189B4 /* FBSDKCoreKit.framework */; };
 		1F2EDF021D0BD53C007189B4 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2EDF011D0BD53C007189B4 /* FBSDKLoginKit.framework */; };
 		1F2EDF041D0BD543007189B4 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2EDF031D0BD543007189B4 /* FBSDKShareKit.framework */; };
@@ -106,7 +105,6 @@
 		1F2654491D0BB98A002A7052 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		1F2690131D0BC9FB00E68D39 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../../../Library/Developer/Xcode/DerivedData/IPA-fgiprwkhzcagjmevyqmwksgyhwto/Build/Products/Debug-iphonesimulator/Realm.framework"; sourceTree = "<group>"; };
 		1F2690151D0BCA0000E68D39 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "../../../Library/Developer/Xcode/DerivedData/IPA-fgiprwkhzcagjmevyqmwksgyhwto/Build/Products/Debug-iphonesimulator/RealmSwift.framework"; sourceTree = "<group>"; };
-		1F2EDEFD1D0BD3F7007189B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1F2EDEFF1D0BD530007189B4 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		1F2EDF011D0BD53C007189B4 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		1F2EDF031D0BD543007189B4 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
@@ -208,7 +206,6 @@
 				1F2EDF0C1D0BE7B5007189B4 /* EventAPI.swift */,
 				1F2EDF101D0BE8D7007189B4 /* EventCell.swift */,
 				1F2EDF0E1D0BE85B007189B4 /* EventVC.swift */,
-				1F2EDEFD1D0BD3F7007189B4 /* GoogleService-Info.plist */,
 				1F2654491D0BB98A002A7052 /* Image.swift */,
 				1F2654191D0BA063002A7052 /* Info.plist */,
 				1F2654111D0BA063002A7052 /* IPA.xcdatamodeld */,
@@ -394,7 +391,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F2654181D0BA063002A7052 /* LaunchScreen.storyboard in Resources */,
-				1F2EDEFE1D0BD3F7007189B4 /* GoogleService-Info.plist in Resources */,
 				1F2654151D0BA063002A7052 /* Assets.xcassets in Resources */,
 				1F2654101D0BA063002A7052 /* Main.storyboard in Resources */,
 			);

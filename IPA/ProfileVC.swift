@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Firebase
 import Kingfisher
 import RealmSwift
 
@@ -15,7 +14,6 @@ private let reuseIdentifier = "ProfileRatingCell"
 
 class ProfileVC: UICollectionViewController {
     
-    var user:FIRUser!
     var isLoggedIn:Bool = false
     let realm = try! Realm()
     var beeryArray = Array<BeerModel>()
